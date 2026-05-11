@@ -1,0 +1,17 @@
+mcp
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+google-generativeai
+sentence-transformers
+umap-learn
+hdbscan
+scikit-learn
+pandas
+numpy
+google-play-scraper
+feedparser
+pydantic
+beautifulsoup4
+python-dotenv

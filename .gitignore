@@ -1,0 +1,22 @@
+# Google Workspace Secrets
+token.json
+token_gmail.json
+credentials.json
+.env
+
+# Local State & Data
+pulse_state.db
+data/
+reports/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
