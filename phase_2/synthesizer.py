@@ -1,7 +1,7 @@
 import os
 import json
 import time
-from typing import List, Optional, Dict
+from typing import List, Optional
 from pydantic import BaseModel
 import google.generativeai as genai
 from dotenv import load_dotenv
@@ -111,7 +111,7 @@ class Synthesizer:
                 
         return self._mock_synthesis(cluster_reviews)
 
-    def batch_synthesize(self, cluster_groups: Dict[int, List[str]], product_name: str) -> List[Theme]:
+    def batch_synthesize(self, cluster_groups: dict[int, list[str]], product_name: str) -> list[Theme]:
         """
         Synthesizes all themes in a single batch API call to avoid rate limits.
         """
