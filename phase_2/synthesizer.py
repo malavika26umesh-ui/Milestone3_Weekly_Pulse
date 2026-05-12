@@ -1,7 +1,7 @@
 import os
 import json
 import time
-from typing import List, Optional
+from typing import List, Optional, Dict
 from pydantic import BaseModel
 import google.generativeai as genai
 from dotenv import load_dotenv
