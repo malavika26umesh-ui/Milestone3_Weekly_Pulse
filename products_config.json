@@ -1,0 +1,26 @@
+{
+    "groww": {
+        "name": "Groww",
+        "app_store_id": "1404871703",
+        "play_store_id": "com.nextbillion.groww",
+        "country": "in"
+    },
+    "indmoney": {
+        "name": "INDMoney",
+        "app_store_id": "1424386551",
+        "play_store_id": "com.indwealth",
+        "country": "in"
+    },
+    "paytm": {
+        "name": "Paytm",
+        "app_store_id": "473941534",
+        "play_store_id": "net.one97.paytm",
+        "country": "in"
+    },
+    "zerodha": {
+        "name": "Zerodha Kite",
+        "app_store_id": "1149390038",
+        "play_store_id": "com.zerodha.kite3",
+        "country": "in"
+    }
+}

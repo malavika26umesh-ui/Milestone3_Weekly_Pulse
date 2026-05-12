@@ -170,6 +170,15 @@ async def main():
     
     args = parser.parse_args()
     
+    # Import PRODUCTS from phase_1 to check valid options
+    from phase_1.main import PRODUCTS
+    
+    product_key = args.product.lower()
+    if product_key not in PRODUCTS:
+        print(f"\n[ERROR] Product '{args.product}' not found in products_config.json")
+        print(f"Available options: {', '.join(PRODUCTS.keys())}")
+        sys.exit(1)
+
     orchestrator = PulseOrchestrator()
     await orchestrator.run(args.product, args.force)
 

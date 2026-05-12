@@ -8,19 +8,16 @@ from .ingestion import fetch_app_store_reviews, fetch_play_store_reviews
 
 load_dotenv()
 
-# Pre-configured products for easy testing
-PRODUCTS = {
-    "groww": ProductConfig(
-        name="Groww",
-        app_store_id="1404871703",
-        play_store_id="com.nextbillion.groww"
-    ),
-    "indmoney": ProductConfig(
-        name="INDMoney",
-        app_store_id="1424386551",
-        play_store_id="com.indwealth"
-    )
-}
+# Load products from external config
+def load_products():
+    config_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "products_config.json")
+    if os.path.exists(config_path):
+        with open(config_path, "r") as f:
+            data = json.load(f)
+            return {k: ProductConfig(**v) for k, v in data.items()}
+    return {}
+
+PRODUCTS = load_products()
 
 def save_reviews(reviews: List[Review], product_name: str) -> str:
     os.makedirs("data", exist_ok=True)
