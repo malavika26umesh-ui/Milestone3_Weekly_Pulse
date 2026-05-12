@@ -11,6 +11,7 @@ from phase_5.client import GmailMCPClient
 
 # Replace this with your actual Google Doc ID to collect all pulses in one place
 MASTER_DOC_ID = "15ZLTkFdJw3RlpC8F5ATbNRm7v9zI2J9LVerR4d-wm2k"
+print("[DEBUG] Running Pulse Orchestrator v2.0 (Lowercase Fix Applied)")
 
 class PulseOrchestrator:
     def __init__(self):
