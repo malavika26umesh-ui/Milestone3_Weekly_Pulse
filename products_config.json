@@ -22,5 +22,11 @@
         "app_store_id": "1149390038",
         "play_store_id": "com.zerodha.kite3",
         "country": "in"
+    },
+    "tvsconnect": {
+        "name": "TVS Connect",
+        "app_store_id": "1439773295",
+        "play_store_id": "com.tvsm.connect",
+        "country": "in"
     }
 }
